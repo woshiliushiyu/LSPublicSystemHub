@@ -7,10 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LSController {
 
-    @RequestMapping("/main")
+    @RequestMapping("/index")
     @ResponseBody
     public String index() {
       return "hello world";
     };
 
+    @RequestMapping("/main")
+    @ResponseBody
+    public String main(){
+        return "成功";
+    };
 }
